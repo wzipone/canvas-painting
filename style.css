@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#canvas {
+  /* canvas是inline元素，设置宽高前首先设置为block*/
+  display: block;
+}
+
+#clearCanvas,
+#eraser,
+#brush,
+#colorSelector {
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 0.5;
+}
+
+#eraser {
+  top: 60px;
+}
+
+#colorSelector {
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
